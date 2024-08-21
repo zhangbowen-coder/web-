@@ -3,56 +3,32 @@
 		<meta charset="UTF-8">
 		<title>个人简介：张博闻</title>
 		<style>
-			.guide{
-				text-align:center;
-				font-family:STSong,SimSun,STHeiti,SimHei;
-				background-color:white;
-				margin-top:0;
-				margin-bottom:0;
+			ul.guide{
+				margin:0;
+				padding:0;
+				background-color:dimgrey;
+				list-style-type:none;
 			}
-			.top{
-				text-align:center;
-				font-family:"STKaiti",KaiTi,STHeiti,SimHei;
-				background-color:aquamarine;
-				margin-top:0;
-				margin-bottom:0;
+			li.guide{
+				float:left;
 			}
-			.left{
-				text-align:center;
-				margin-left:10%;	
+			a:link.guide a:visited.guide{
+				display:block;
+				color:white;
+				padding:8px;
 			}
-			.center{
-				text-align:center;
-			}
-			.bottom{
-				text-align:center;
-				font-family:"STKaiti",KaiTi,STHeiti,SimHei;
-			}
-			h1,h2,h3,h4,h5,h6{
-				font-family:STSong,SimSun,STHeiti,SimHei;
-				text-align:center;
-			}
-			body{
-				background-color:azure;
-			}
-			hr{
-				border:0;
-				border-top:8px dotted black;
-			}
-			.left{
-				position:relative;
-				right:40%;
+			a:hover.guide{
+				display:block;
+				color:white;
+				padding:8px;
+				background-color:black;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="guide">
-			<a name="top" id="top" href="../../index.html">游戏首页</a> | <a href="../introcuction.html">小组介绍页</a>
-		</div>
-		<div class="top">
-			<h1>张博闻</h1>
-			<p class="center"><img src="../image/zbw/self.jpg" alt="自拍" /></p>
-			<p class="left">主程序员与策划</p><p class="center"></p>
-		</div>
+		<ul class="guide">
+			<li class="guide"><a class="guide" name="top" id="top" href="../../index.html">游戏首页</a></li>
+			<li class="guide"><a class="guide" href="../introcuction.html">小组介绍页</a></li>
+		</ul>
 	</body>
 </html>
