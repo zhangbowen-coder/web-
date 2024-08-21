@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.15);j
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    max-width:750px;
+    height:420px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: row;
+}
+.SignIn{
+    width:50%;
+    z-index: 1;
+}
+.Register{
+    width:50%;
+    z-index:1;
+}
+.form{
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+.FormTitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 100;
+    color:azure;
+}
+.input{
+    position: relative;
+    height: 50px;
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: larger;
+    color: cornflowerblue;
+}
+.button{
+    background-color: #e7e7e7;
+    color: #1c1c1c;
+    cursor: pointer;
+    height:70px;
+    width:150px;
+    font-size:1.5em;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-weight: 1000;
+}
