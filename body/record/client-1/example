@@ -1,0 +1,12 @@
+time:xxxx.xx.xx:xx:xx;
+progress:.....（这里就写对应场景的html文件）
+achievement:
+{
+	ahcivement-1:y
+	ahcivement-2:n
+	ahcivement-1:y
+	ahcivement-4:y
+	ahcivement-5:n
+	......
+}
+......
