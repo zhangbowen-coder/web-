@@ -1,0 +1,40 @@
+@import url('https://fonts.font.im/css?family=Open+Sans');
+:root{
+    --blue:#396dff;
+    --green:#32c245;
+    --white:#fff;
+    --grey:#f7f7f7;
+
+    --xs:4px;
+    --s:8px;
+    --m:16px;
+    --l:24px;
+}
+
+a{
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Title{
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    color: #32c245;
+}
+
+.textbox{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.2);
+    align-items: center;
+}
+
+.text{
+    font-size: --l;
+    color: #396dff;
+}
