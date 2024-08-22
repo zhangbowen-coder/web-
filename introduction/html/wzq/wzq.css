@@ -1,0 +1,36 @@
+body{
+    background-image: url("../../image/wzq/tiaowang.jpg");
+    background-attachment: fixed;
+    margin: auto;
+}
+h1{
+    font-family: 宋体;
+    font-size:1.5cm;
+    color:rgb(159, 250, 253);
+}
+h2{
+    font-family:方正舒体;
+    color:rgb(150, 227, 247); 
+}
+#bread{
+    font-size: 20px;
+    color: black;
+}
+.note{
+    font-size: 22px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+}
+div{
+    float: right;
+}
+a{text-decoration: none;}
+a:link{
+    color: rgb(131, 247, 247);
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    border-bottom: 0px solid black; color:red;
+}
