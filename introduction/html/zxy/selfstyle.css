@@ -1,0 +1,81 @@
+@import url('https://fonts.font.im/css?family=Open+Sans');
+
+a{
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../../image/zxy/background.jpg);
+}
+
+.SideBar{
+    display: flex;
+    flex-direction: column;
+    background: blanchedalmond;
+    border-style: solid;
+    border-color: grey;
+    color: blueviolet;
+    font-size: 2rem;
+    height: 500px;
+    width: 140px;
+    left:300px;
+    top: 100px;
+    text-align: center;
+    position: absolute;
+}
+
+.SideBarButton{
+    display: flex;
+    border-style: solid;
+    border-color: grey;
+    height: 120px;
+    width: 140px;
+    text-align: center;
+    justify-content: center;
+}
+
+.textbox{
+    display: flex;
+    position: absolute;
+    background: blanchedalmond;
+    top: 100px;
+    left: 440px;
+    height: 500px;
+    width:500px;
+    border-style: solid;
+    border-color: grey;
+}
+
+.text{
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 25%);
+    -webkit-transform: translate(0%, 25%);
+    -moz-transform: translate(0%, 25%);
+    -ms-transform: translate(0%, 25%);
+    -o-transform: translate(0%, 25%);
+}
+
+.text-content{
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 120%);
+    -webkit-transform: translate(0%, 120%);
+    -moz-transform: translate(0%, 120%);
+    -ms-transform: translate(0%, 120%);
+    -o-transform: translate(0%, 120%);
+    font-size:larger;
+}
+
+.photo{
+    position: absolute;
+    top: 101px;
+    left: 945px;
+    height: 503px;
+    width: 370px;
+}
