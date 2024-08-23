@@ -1,0 +1,19 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image:url(../resources/background.jpg);
+}
+ul.guide{
+	list-style-type:none;
+	background-color:dimgrey;
+	display:block;
+}
+li.guide{
+	display:inline;
+}
+a.guide{
+	display:block;
+	
+}
