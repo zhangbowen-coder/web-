@@ -36,6 +36,7 @@ li.intro{
 	display:inline-block;
 	height: 400px;
 	width:20%;
+	margin:auto;
 }
 a.intro{
 	background-color:dimgray;
