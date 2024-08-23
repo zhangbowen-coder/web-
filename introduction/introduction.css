@@ -34,6 +34,7 @@ ul.intro{
 }
 li.intro{
 	display:inline-block;
+	height: 400px;
 	width:20%;
 }
 a.intro{

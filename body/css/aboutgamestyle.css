@@ -20,21 +20,45 @@ a{
     padding: 0;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../resources/background_images/index.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .Title{
     font-size: 3rem;
     font-weight: 300;
     text-align: center;
-    color: #32c245;
+    color: #fff;
+    position: absolute;
+    bottom: 550px;
 }
 
 .textbox{
-    display: flex;
+    display: block;
     justify-content: center;
     background-color: rgba(255,255,255,0.2);
     align-items: center;
+    position: absolute;
+    bottom: 100px;
+    height: 390px;
+    width: 600px;
+    background: black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-style: solid;
+    border-color: blueviolet;
 }
 
 .text{
     font-size: --l;
-    color: #396dff;
+    color: #fff;
 }

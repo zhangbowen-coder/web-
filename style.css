@@ -20,10 +20,6 @@ a{
     padding: 0;
 }
 
-a:visited{
-    color:#fff;
-}
-
 body {
     height: 100vh;
     display: flex;
@@ -43,6 +39,18 @@ body {
     position: absolute;
     flex-direction: column;
 }
+
+a:link {
+    color: #0000EE;
+  }
+  
+  a:visited {
+    color: #0000EE;
+  }
+  
+  a:active {
+    color: #0000EE; 
+  }
 
 .InterfaceButton{
     
