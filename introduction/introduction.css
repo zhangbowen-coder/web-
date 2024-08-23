@@ -15,5 +15,28 @@ li.guide{
 }
 a.guide{
 	display:block;
-	
+	color:white;
+}
+a:hover.guide{
+	display:block;
+	color:white;
+	background-color:black;
+}
+a.intro_yhb{
+	background-image:url(./image/yhb/yhb.jpg);
+}
+a.intro_zbw{
+	background-image:url(./image/);
+}
+a.intro_jyt{
+	background-image:url(./image/yhb/yhb.jpg);
+}
+a.intro_wzq{
+	background-image:url(./image/yhb/yhb.jpg);
+}
+a.intro_wxy{
+	background-image:url(./image/yhb/yhb.jpg);
+}
+a.intro_zxy{
+	background-image:url(./image/yhb/yhb.jpg);
 }
