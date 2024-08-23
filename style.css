@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./resources/index.jpg");
+    background-image: url("./resources/index.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
