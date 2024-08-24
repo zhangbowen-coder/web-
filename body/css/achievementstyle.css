@@ -20,14 +20,6 @@ a{
     padding: 0;
 }
 
-.Title{
-    display: flex;
-    font-size: 3rem;
-    font-weight: 300;
-    text-align: center;
-    justify-content: center;
-}
-
 .achievementbox{
     display: flex;
     justify-content: center;
