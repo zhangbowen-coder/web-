@@ -21,10 +21,17 @@ a{
     text-decoration: none;
 }
 
+body{
+    text-align:center;
+    background-image:url("../../resources/background_images/指挥部地图.png");
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
 .wrapper{
     width:90%;
-    margin:0,auto;
-    max-width:80rem;
+    display:inline-block;
 }
 
 .header{
@@ -35,13 +42,28 @@ a{
     margin:10px,auto,0px;
     font-family:"Microsoft YaHei", "宋体", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;
     font-size:3em;
-    font-weight:600
+    font-weight:600;
+    text-align:center;
+    color:aliceblue;
+}
+
+.achievement-display-zone{
+    width:100%;
+    display: flex;
 }
 
 .achievementbox{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    background-color:black;
+    text-align:center;
+    color:aliceblue;
+    flex-grow:1;
+    border-color:aliceblue;
+    border-style:solid;
+    border-width:2px;
+    opacity:50%;
 }
 
 .achievement{
