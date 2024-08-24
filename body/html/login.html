@@ -2,7 +2,7 @@
  * @Author: 699574 3331908788@qq.com
  * @Date: 2024-08-20 18:36:56
  * @LastEditors: 699574 3331908788@qq.com
- * @LastEditTime: 2024-08-21 16:57:16
+ * @LastEditTime: 2024-08-24 14:44:14
  * @FilePath: \undefinedc:\Users\win11\Desktop\web\game\新建文件夹\login.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -12,27 +12,28 @@
         <meta charset="UTF-8" />
         <title>Login</title>
         <link rel="stylesheet" href="../css/loginstyle.css">
+        <script type="text/javascript" src="../Js/User.js"></script>
     </head>
 </html>
-    <body>
-     <div class="LoginContainer">
-        <span class="border"></span>
-        <div class="SignIn">
-            <form class="form" id="form1">
+    <body></body>
+        <div class="LoginContainer">
+           <div class="SignIn hidden">
+            <form class="form" id="form1" name="RegisterForm">
                 <h1 class="FormTitle">注册</h1>
-                <input type="text" placeholder="Username" class="input" />
-                <input type="password" placeholder="Password" class="input" />
-                <button type="button" class="button">Register</button>
+                <input type="text" id="username" placeholder="Username" class="input" />
+                <input type="password" id="password" placeholder="Password" class="input" />
+                <input type="password" id="AgainPassword" placeholder="Password" class="input" />
+                <button type="button" class="button" onclick="register()">Register</button>
             </form>
-        </div>
-      <div class="Register">
-        <form class="form" id="form2">
-            <h1 class="FormTitle">登录</h1>
-                <input type="text" placeholder="Username" class="input" />
-                <input type="password" placeholder="Password" class="input" />
-                <button type="button" class="button">Login</button>
-        </form>
-      </div>
-     </div>
+           </div>
+          <div class="Register">
+            <form class="form" id="form2" name="LoginForm">
+             <h1 class="FormTitle">登录</h1>
+                <input type="text" id="loginusername" placeholder="Username" class="input" />
+                <input type="password" id="loginpassword" placeholder="Password" class="input" />
+                <button type="button" class="button" onclick="login()">Login</button>
+            </form>
+          </div>
+       </div>
     </body>
 </html>
