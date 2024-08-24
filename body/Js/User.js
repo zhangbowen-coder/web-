@@ -114,7 +114,7 @@ function login()
             else if(find(password))
             {
                 alert("登录成功！");
-                window.location.href='./login.html';
+                window.location.href='../../index.html';
             }
             else 
             {alert("密码错误！请重试");
