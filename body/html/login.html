@@ -1,5 +1,13 @@
 <!--
  * @Author: 699574 3331908788@qq.com
+ * @Date: 2024-08-24 09:29:17
+ * @LastEditors: 699574 3331908788@qq.com
+ * @LastEditTime: 2024-08-24 16:22:27
+ * @FilePath: \undefinedc:\Users\win11\Desktop\web\web-assignment\body\html\login.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!--
+ * @Author: 699574 3331908788@qq.com
  * @Date: 2024-08-20 18:36:56
  * @LastEditors: 699574 3331908788@qq.com
  * @LastEditTime: 2024-08-24 14:44:14
@@ -13,11 +21,13 @@
         <title>Login</title>
         <link rel="stylesheet" href="../css/loginstyle.css">
         <script type="text/javascript" src="../Js/User.js"></script>
+
     </head>
 </html>
     <body></body>
-        <div class="LoginContainer">
-           <div class="SignIn hidden">
+     <div class="LoginContainer">
+        <div class="form-box">
+           <div class="Register hidden Red">
             <form class="form" id="form1" name="RegisterForm">
                 <h1 class="FormTitle">注册</h1>
                 <input type="text" id="username" placeholder="Username" class="input" />
@@ -26,7 +36,7 @@
                 <button type="button" class="button" onclick="register()">Register</button>
             </form>
            </div>
-          <div class="Register">
+          <div class="SignIn Blue">
             <form class="form" id="form2" name="LoginForm">
              <h1 class="FormTitle">登录</h1>
                 <input type="text" id="loginusername" placeholder="Username" class="input" />
@@ -34,6 +44,20 @@
                 <button type="button" class="button" onclick="login()">Login</button>
             </form>
           </div>
+        </div>
+          <div class="con-box left">
+            <h2>欢迎来到<span>决战时刻</span></h2>
+            <img src="./images/1.png" alt="">
+            <p>已有账号</p>
+            <button id="login">去登录</button>
+        </div>
+        <div class="con-box right">
+            <h2>欢迎来到<span>决战时刻</span></h2>
+            <img src="./images/2.png" alt="">
+            <p>没有账号？</p>
+            <button id="register">去注册</button>
+        </div>
        </div>
+       <script src="../Js/logineffect.js"></script>
     </body>
 </html>
