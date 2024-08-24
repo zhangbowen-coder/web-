@@ -1,4 +1,4 @@
-@import url('https://fonts.font.im/css?family=Open+Sans');
+/* @import url('https://fonts.font.im/css?family=Open+Sans');
 :root{
     --blue:#396dff;
     --green:#32c245;
@@ -10,20 +10,38 @@
     --m:16px;
     --l:24px;
 }
-
-a{
-    text-decoration: none;
-}
+字体集合 */
 
 * {
     margin: 0;
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    width:90%;
+    margin:0,auto;
+    max-width:80rem;
+}
+
+.header{
+    text-align:center;
+}
+
+.title{
+    margin:10px,auto,0px;
+    font-family:"Microsoft YaHei", "宋体", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;
+    font-size:3em;
+    font-weight:600
+}
+
 .achievementbox{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .achievement{
