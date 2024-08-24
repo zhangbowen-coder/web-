@@ -61,9 +61,6 @@ body{
 }
 
 .front,.back{
-    position:absolute;
-    top:0;
-    left:0;
     display: flex;
     flex-direction:column;
     justify-content:space-evenly;
