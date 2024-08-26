@@ -1,0 +1,48 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body{
+	background-image:none;
+	
+}
+
+.button-box{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	position:relative;
+	top:15px;
+	left:15px;
+	height:2.5em;
+	width:10em;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+
+.button{
+	width:2em;
+	height:2em;
+	display:inline-block;
+	background-color:black;
+	color:white;
+}
+
+.setting{
+	background-image:none;
+}
+
+.look-back{
+	background-image:none;
+}
+
+.button span{
+	display:none;
+}
+
+.slide-box{
+	
+}
