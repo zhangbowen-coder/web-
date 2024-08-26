@@ -41,6 +41,16 @@
 
 2024年8月26日16:22:09
 
-    上传了担任对话页面的模式HTML与CSS
+    上传了单人对话页面的模式HTML与CSS
 
-    ![图片]()
+    ![图片](./resources/image-logfile/log1.png)
+
+    ——————张博闻
+
+2024年8月26日22:44:53
+
+更新了单人对话页面的模式HTML与CSS
+
+![图片](./resources/image-logfile/log2.png)
+
+——————张博闻
