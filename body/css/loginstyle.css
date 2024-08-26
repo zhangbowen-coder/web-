@@ -51,7 +51,7 @@ body {
 }
 
 .Blue{
-    background-color: aqua;
+    background-color: cornflowerblue;
 }
 
 .Register, .SignIn {
@@ -155,7 +155,7 @@ input:focus::placeholder {
 }
 
 .con-box h2 {
-    color: #8e9aaf;
+    color: aqua;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -166,12 +166,11 @@ input:focus::placeholder {
 .con-box p {
     font-size: 12px;
     letter-spacing: 2px;
-    color: #8e9aaf;
     text-align: center;
 }
 
 .con-box span {
-    color: #d3b7d8;
+    color: crimson;
 }
 
 .con-box img {
@@ -212,4 +211,12 @@ input:focus::placeholder {
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 50px;
+}
+
+.text-red{
+    color: crimson;
+}
+
+.text-blue{
+    color: aqua;
 }
