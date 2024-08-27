@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			第一章
+		</title>
+		<link rel="stylesheet" type="text/css" href="../../css/dialog-single-stand.css" />
+		<style>
+			.content-box{
+				background-image:url("../../../resources/游戏背景图/中国中南海指挥部1.jpg");
+			}
+			.character{
+				background-image:url("../../../resources/人物立绘/李德胜.png");
+			}	
+		</style>
+	</head>
+	<body>
+		<div class="content-box">
+			<div class="top">
+				<div class="button-box">
+					<div id="btn1" class="button setting" title="设置">
+						<span>设置按钮</span>
+					</div>
+					<div id="btn2" class="button look-back" title="前情回顾">
+						<span>回顾按钮</span>
+					</div>
+					<div id="btn3" class="button pass" title="跳过">
+						<span>跳过按钮</span>
+					</div>
+				</div>
+				<div class="slide-box">
+					<div class="slide-one"></div>
+					<div class="slide-two"></div>
+					<div class="punch"></div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="character"></div>
+				<div class="dia-box">
+					当前新罗形势危急，联合国军来势汹汹，这已严重威胁到我国东北的和平。国辉，你是否愿意担起大任，领兵出征，保卫我国边疆？<br>
+					<div class="continue">
+						click to continue.
+					</div>
+				</div>
+				<div class="name-box">
+					李德胜
+				</div>
+			</div>
+		</div>
+		<script>
+			var dia=document.getElementsByClassName("dia-box");
+			dia[0].addEventListener
+			(
+				"click",
+				function()
+				{
+					window.open('./choice_1.html',"_self");
+				}
+			);
+		</script>
+		<script type="text/javascript" src="../../Js/User.js"></script>
+		<script type="text/javascript" src="../../Js/History.js"></script>
+		<script type="text/javascript" src="../../Js/Battle.js"></script>
+	</body>
+</html>
