@@ -3,11 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>
-			...
+			第一章
 		</title>
-		<script src="../Js/User.js"></script>
-		<script src="../Js/History.js"></script>
-		<link rel="stylesheet" type="text/css" href="../css/dialog-single-stand.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/dialog-single-stand.css" />
 	</head>
 	<body>
 		<div class="content-box">
@@ -16,7 +14,7 @@
 					<div id="btn1" class="button setting" title="设置">
 						<span>设置按钮</span>
 					</div>
-					<div id="btn2" class="button look_back" title="前情回顾">
+					<div id="btn2" class="button look-back" title="前情回顾">
 						<span>回顾按钮</span>
 					</div>
 					<div id="btn3" class="button pass" title="跳过">
@@ -34,12 +32,27 @@
 					<img src="../../resources/人物立绘（二次）/test.jpg"/>
 				</div>
 				<div class="dia-box">
-					......
+					当前新罗形势危急，联合国军来势汹汹，这已严重威胁到我国东北的和平。国辉，你是否愿意担起大任，领兵出征，保卫我国边疆？<br>
+					click to continue.
 				</div>
 				<div class="name-box">
-					......
+					李德胜
 				</div>
 			</div>
 		</div>
+		<script>
+			var dia=document.getElementsByClassName("dia-box");
+			dia[0].addEventListener
+			(
+				"click",
+				function()
+				{
+					window.open('./choice_1.html',"_self");
+				}
+			);
+		</script>
+		<script type="text/javascript" src="../../Js/User.js"></script>
+		<script type="text/javascript" src="../../Js/History.js"></script>
+		<script type="text/javascript" src="../../Js/Battle.js"></script>
 	</body>
 </html>
