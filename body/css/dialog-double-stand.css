@@ -105,13 +105,13 @@ body{
 
 .bottom{
 	position:absolute;
-	left:max(20px,calc((100% - 1200px) / 2));
+	left:max(20px,calc((100% - 1400px) / 2));
 	bottom:0;
-	/* border-style:solid;
+	border-style:solid;
 	border-width:2px;
-	border-color:black; */
+	border-color:black;
 	height:400px;
-	width:1200px;
+	width:1400px;
 	/* display:flex;
 	flex-direction:row; */
 }
@@ -120,7 +120,7 @@ body{
 	position:absolute;
 	left:300px;
 	bottom:0;
-	width:900px;
+	width:800px;
 	height:220px;
 	border-style:solid;
 	border-width:2px;
@@ -130,8 +130,6 @@ body{
 
 .character{
 	position:absolute;
-	left:0;
-	bottom:0;
 	border-style:solid;
 	border-width:2px;
 	border-color:black;
@@ -140,6 +138,16 @@ body{
 	background-size:contain; */
 	height:400px;
 	width:300px;
+}
+
+#cha1.character{
+	bottom:0;
+	left:0;
+}
+
+#cha2.character{
+	right:0;
+	bottom:0;
 }
 
 .character img{
