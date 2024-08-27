@@ -3,9 +3,10 @@
 	padding:0;
 	border:0;
 	/* 调试用框边 */
-	border-style:solid;
+	/* border-style:solid;
 	border-width:1px;
-	border-color:black;
+	border-color:black; */
+	font-family:STKaiti,KaiTi;
 }
 
 body{
@@ -51,17 +52,27 @@ body{
 	width:2em;
 	height:2em;
 	display:inline-block;
-	background-color:black;
 	color:white;
+	background-color:black;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	border-width:1px;
+	border-radius:20%;
 }
 
 .setting{
-	background-image:none;
+	background-image:url(../../resources/icons/setting.png);
 }
 
 .look-back{
-	background-image:none;
+	background-image:url(../../resources/icons/look-back.png);
 }
+
+.pass{
+	background-image:url(../../resources/icons/pass.png);
+}
+
 
 .button span{
 	display:none;
@@ -111,15 +122,24 @@ body{
 	left:25%;
 	top:15%;
 	justify-content:space-evenly;
+	background-color:rgba(0,0,1,50%)
 }
 
 .question-box{
 	font-size:2em;
 	text-align:center;
-	width:100%;
+	width:80%;
+	margin-left:10%;
 	height:fit-content;
+	color:white;
+	background-color:rgba(0,0,1,80%);
 }
 .answer-box{
-	width:100%;
+	width:80%;
+	margin-left:10%;
+	font-size:1.5em;
 	height:fit-content;
+	text-align:center;
+	color:white;
+	background-color:rgba(0,0,1,80%);
 }
