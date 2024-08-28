@@ -5,13 +5,37 @@
 		<title>
 			第一章
 		</title>
-		<link rel="stylesheet" type="text/css" href="../../css/dialog-single-stand.css" />
+		<link rel="stylesheet" href="../../css/text-stand.css" type="text/css" />
 		<style>
 			.content-box{
 				background-image:url("../../../resources/游戏背景图/中国朝鲜指挥部.png");
 			}
-			.character{
-				background-image:url("../../../resources/人物立绘/中国参谋1（李云龙）.png");
+			.dia-box{
+				height:700px;
+				width:600px;
+				top:40px;
+				left:calc((100% - 600px) / 2);
+				background-image:url("../../../resources/游戏背景图/报纸/发布会.jpg");
+				font-size:x-large;
+			}
+			
+			.btn{
+				position:absolute;
+				bottom:3em;
+				width:20em;
+				height:1.5em;
+				left:calc((100% - 20em) / 2);
+				background-image:url("../../../resources/游戏背景图/选项.png");
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-position:center;
+				color:white;
+				text-align:center;
+				vertical-align:middle;
+			}
+
+			.btn:hover{
+				color:black;
 			}
 		</style>
 	</head>
@@ -35,29 +59,20 @@
 					<div class="punch"></div>
 				</div>
 			</div>
-			<div class="bottom">
-				<div class="character"></div>
-				<div class="dia-box">
-					<div class="dia">
-						彭总，米军现在大肆宣传我军在飞虎山战役损失惨重，您看报纸——
-					</div>
-					<div class="continue">
-						click to continue.
-					</div>
-				</div>
-				<div class="name-box">
-					参谋
+			<div class="dia-box">
+				<div class="btn">
+					可笑的误判
 				</div>
 			</div>
 		</div>
 		<script>
-			var dia=document.getElementsByClassName("dia-box");
+			var dia=document.getElementsByClassName("btn");
 			dia[0].addEventListener
 			(
 				"click",
 				function()
 				{
-					window.open("./text_1.html","_self");
+					window.open("./dia_4.html","_self");
 				}
 			);
 		</script>

@@ -5,13 +5,16 @@
 		<title>
 			第一章
 		</title>
-		<link rel="stylesheet" type="text/css" href="../../css/dialog-single-stand.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/dialog-double-stand.css" />
 		<style>
+			#cha1.character{
+				background-image:url(../../../resources/人物立绘/彭国辉.png);
+			}
+			#cha2.character{
+				background-image:url(../../../resources/人物立绘/中国参谋1（李云龙）.png);
+			}
 			.content-box{
 				background-image:url("../../../resources/游戏背景图/中国朝鲜指挥部.png");
-			}
-			.character{
-				background-image:url("../../../resources/人物立绘/中国参谋1（李云龙）.png");
 			}
 		</style>
 	</head>
@@ -36,10 +39,13 @@
 				</div>
 			</div>
 			<div class="bottom">
-				<div class="character"></div>
+				<div id="cha1" class="character">
+				</div>
+				<div id="cha2" class="character">
+				</div>
 				<div class="dia-box">
 					<div class="dia">
-						彭总，米军现在大肆宣传我军在飞虎山战役损失惨重，您看报纸——
+						我军已经将敌军完全分割包围，奈何无法及时吃掉敌军，导致敌人有机会反击（叹气）
 					</div>
 					<div class="continue">
 						click to continue.
@@ -57,7 +63,7 @@
 				"click",
 				function()
 				{
-					window.open("./text_1.html","_self");
+					window.open("./dia_8.html","_self");
 				}
 			);
 		</script>

@@ -5,13 +5,16 @@
 		<title>
 			第一章
 		</title>
-		<link rel="stylesheet" type="text/css" href="../../css/dialog-single-stand.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/dialog-double-stand.css" />
 		<style>
+			#cha1.character{
+				background-image:url(../../../resources/人物立绘/彭国辉.png);
+			}
+			#cha2.character{
+				background-image:url(../../../resources/人物立绘/中国参谋1（李云龙）.png);
+			}
 			.content-box{
 				background-image:url("../../../resources/游戏背景图/中国朝鲜指挥部.png");
-			}
-			.character{
-				background-image:url("../../../resources/人物立绘/中国参谋1（李云龙）.png");
 			}
 		</style>
 	</head>
@@ -36,17 +39,20 @@
 				</div>
 			</div>
 			<div class="bottom">
-				<div class="character"></div>
+				<div id="cha1" class="character">
+				</div>
+				<div id="cha2" class="character">
+				</div>
 				<div class="dia-box">
 					<div class="dia">
-						彭总，米军现在大肆宣传我军在飞虎山战役损失惨重，您看报纸——
+						（摇摇头）敌军力量比我们想象的要更强，命令部队好好休整，这将是一场硬仗！
 					</div>
 					<div class="continue">
 						click to continue.
 					</div>
 				</div>
 				<div class="name-box">
-					参谋
+					彭国辉
 				</div>
 			</div>
 		</div>
@@ -57,7 +63,6 @@
 				"click",
 				function()
 				{
-					window.open("./text_1.html","_self");
 				}
 			);
 		</script>
