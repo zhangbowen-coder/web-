@@ -2,6 +2,7 @@
 	margin:0;
 	padding:0;
 	border:0;
+	font-family:STKaiti,KaiTi;
 }
 
 body{
@@ -41,30 +42,37 @@ body{
 	left:15px;
 	height:2.5em;
 	width:10em;
-	/* border-style:solid;
-	border-width:1px;
-	border-color:black; */
 }
 
 .button{
 	width:2em;
 	height:2em;
 	display:inline-block;
-	background-color:black;
 	color:white;
+	background-color:black;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	border-width:1px;
+	border-radius:20%;
 }
 
 .setting{
-	background-image:none;
+	background-image:url(../../resources/icons/setting.png);
 }
 
 .look-back{
-	background-image:none;
+	background-image:url(../../resources/icons/look-back.png);
+}
+
+.pass{
+	background-image:url(../../resources/icons/pass.png);
 }
 
 .button span{
 	display:none;
 }
+
 
 .slide-box{
 	display:flex;
@@ -126,6 +134,12 @@ body{
 	border-width:2px;
 	border-color:black;
 	background-image:none;
+	font-size:x-large;
+}
+
+.dia{
+	position:absolute;
+	top:1rem;
 }
 
 .character{
@@ -163,5 +177,17 @@ body{
 	border-width:2px;
 	border-color:black;
 	height:1.5em;
-	width:10em;
+	width:3.5em;
+	font-size:xx-large;
+	font-weight:600;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.continue{
+	position:absolute;
+	right:0;
+	bottom:0;
+	height:fit-content;
+	width:fit-content;
 }

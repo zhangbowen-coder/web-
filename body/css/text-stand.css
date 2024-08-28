@@ -6,6 +6,7 @@
 	border-style:solid;
 	border-width:1px;
 	border-color:black;
+	font-family:STKaiti,KaiTi;
 }
 
 body{
@@ -51,17 +52,27 @@ body{
 	width:2em;
 	height:2em;
 	display:inline-block;
-	background-color:black;
 	color:white;
+	background-color:black;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	border-width:1px;
+	border-radius:20%;
 }
 
 .setting{
-	background-image:none;
+	background-image:url(../../resources/icons/setting.png);
 }
 
 .look-back{
-	background-image:none;
+	background-image:url(../../resources/icons/look-back.png);
 }
+
+.pass{
+	background-image:url(../../resources/icons/pass.png);
+}
+
 
 .button span{
 	display:none;
@@ -112,4 +123,12 @@ body{
 	border-width:2px;
 	border-color:black;
 	background-image:none;
+}
+
+.continue{
+	position:absolute;
+	right:0;
+	bottom:0;
+	height:fit-content;
+	width:fit-content;
 }
