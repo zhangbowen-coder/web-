@@ -5,14 +5,11 @@
 		<title>
 			第一章
 		</title>
-		<link rel="stylesheet" type="text/css" href="../../css/dialog-single-stand.css" />
+		<link rel="stylesheet" href="../../css/choice-stand.css" type="text/css" />
 		<style>
 			.content-box{
-				background-image:url("../../../resources/游戏背景图/中国中南海指挥部1.jpg");
+				background-image:url("../../../resources/游戏背景图/中国朝鲜指挥部.png");
 			}
-			.character{
-				background-image:url("../../../resources/人物立绘/彭国辉.png");
-			}	
 		</style>
 	</head>
 	<body>
@@ -35,31 +32,36 @@
 					<div class="punch"></div>
 				</div>
 			</div>
-			<div class="bottom">
-				<div class="character"></div>
-				<div class="dia-box">
-					<div class="dia">
-						保家卫国，无需多言，主席你就安心交给我，我一定会打败米帝，取得胜利！
-					</div>
-					<div class="continue">
-						click to continue.
-					</div>
+			<div class="ques-ans">
+				<div class="question-box">
+					我军已将敌军包围，但敌人较为强大，军情紧急，我军是否按原定计划执行？
 				</div>
-				<div class="name-box">
-					彭国辉
+				<div class="answer-box">
+					尽全力迅速吃掉米军，防止敌军增援过来腹背受敌
+				</div>
+				<div class="answer-box">
+					调整策略，重点进攻敌军兵力薄弱的新兴里和米陆战一师指挥部
 				</div>
 			</div>
 		</div>
 		<script>
-			var dia=document.getElementsByClassName("dia-box");
-			dia[0].addEventListener
+			var btn=document.getElementsByClassName("answer-box");
+			btn[0].addEventListener
 			(
 				"click",
 				function()
 				{
-					window.open("./cut_scene_决策1选B.html","_self");
+					window.open();
 				}
 			);
+			btn[1].addEventListener
+			(
+				"click",
+				function()
+				{
+					window.open("./dia_12.html","_self");
+				}
+			);	
 		</script>
 		<script src="../Js/User.js"></script>
 		<script src="../Js/History.js"></script>

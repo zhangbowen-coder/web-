@@ -5,10 +5,43 @@
 		<title>
 			第一章
 		</title>
-		<link rel="stylesheet" href="../../css/choice-stand.css" type="text/css" />
+		<link rel="stylesheet" href="../../css/text-stand.css" type="text/css" />
 		<style>
 			.content-box{
 				background-image:url("../../../resources/游戏背景图/中国朝鲜指挥部.png");
+			}
+			.dia-box{
+				height:700px;
+				width:600px;
+				top:40px;
+				left:calc((100% - 600px) / 2);
+				background-color:none;
+				background-image:url("../../../resources/游戏背景图/报纸/和平提案.jpg");
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-position:center;
+				font-size:x-large;
+				opacity:100%;
+			}
+			
+			.btn{
+				position:absolute;
+				bottom:3em;
+				width:20em;
+				height:1.5em;
+				left:calc((100% - 20em) / 2);
+				background-image:url("../../../resources/游戏背景图/选项.png");
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-position:center;
+				color:white;
+				text-align:center;
+				vertical-align:middle;
+				text-indent:0;
+			}
+
+			.btn:hover{
+				color:black;
 			}
 		</style>
 	</head>
@@ -32,45 +65,20 @@
 					<div class="punch"></div>
 				</div>
 			</div>
-			<div class="ques-ans">
-				<div class="question-box">
-					我军下一步的行动是？<br>
-				</div>
-				<div class="answer-box">
-					应用敌退我追战术，快速分割穿插敌人，将敌人在撤退的混乱中歼灭
-				</div>
-				<div class="answer-box">
-					利用敌人错误判断，将计就计，示弱于敌，诱敌深入，然后伺机歼灭
-				</div>
-				<div class="answer-box">
-					和美军进行正面作战，以堂堂正正之阵划线平推
+			<div class="dia-box">
+				<div class="btn">
+					敌人向我们政治施压
 				</div>
 			</div>
 		</div>
 		<script>
-			var btn=document.getElementsByClassName("answer-box");
-			btn[0].addEventListener
+			var dia=document.getElementsByClassName("btn");
+			dia[0].addEventListener
 			(
 				"click",
 				function()
 				{
-					window.open("./dia_5_1.html","_self");
-				}
-			);
-			btn[1].addEventListener
-			(
-				"click",
-				function()
-				{
-					window.open("./dia_5_2.html","_self");
-				}
-			);
-			btn[2].addEventListener
-			(
-				"click",
-				function()
-				{
-					window.open("./dia_5_3.html","_self");
+					window.open("./dia_15.html","_self");
 				}
 			);
 		</script>

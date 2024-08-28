@@ -5,14 +5,11 @@
 		<title>
 			第一章
 		</title>
-		<link rel="stylesheet" type="text/css" href="../../css/dialog-single-stand.css" />
+		<link rel="stylesheet" href="../../css/choice-stand.css" type="text/css" />
 		<style>
 			.content-box{
-				background-image:url("../../../resources/游戏背景图/中国中南海指挥部1.jpg");
+				background-image:url("../../../resources/游戏背景图/中国朝鲜指挥部.png");
 			}
-			.character{
-				background-image:url("../../../resources/人物立绘/彭国辉.png");
-			}	
 		</style>
 	</head>
 	<body>
@@ -35,29 +32,34 @@
 					<div class="punch"></div>
 				</div>
 			</div>
-			<div class="bottom">
-				<div class="character"></div>
-				<div class="dia-box">
-					<div class="dia">
-						保家卫国，无需多言，主席你就安心交给我，我一定会打败米帝，取得胜利！
-					</div>
-					<div class="continue">
-						click to continue.
-					</div>
+			<div class="ques-ans">
+				<div class="question-box">
+					面对十三国提案，是跨过三八线，继续打击帝国主义，加重其悲观主义情绪，还是趁机休整部队，等待更有利的战机？
 				</div>
-				<div class="name-box">
-					彭国辉
+				<div class="answer-box">
+					响应和平提案，利用时间整顿后勤，先停火在谈判
+				</div>
+				<div class="answer-box">
+					质疑和平提案，率领军队跨过三八线，敌退我追
 				</div>
 			</div>
 		</div>
 		<script>
-			var dia=document.getElementsByClassName("dia-box");
-			dia[0].addEventListener
+			var btn=document.getElementsByClassName("answer-box");
+			btn[0].addEventListener
 			(
 				"click",
 				function()
 				{
-					window.open("./cut_scene_决策1选B.html","_self");
+					window.open("","_self");
+				}
+			);
+			btn[1].addEventListener
+			(
+				"click",
+				function()
+				{
+					window.open("dia_16.html","_self");
 				}
 			);
 		</script>
