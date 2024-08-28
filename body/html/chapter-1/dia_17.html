@@ -3,13 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>
-			第一章
+			...
 		</title>
-		<link rel="stylesheet" href="../../css/choice-stand.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../../css/dialog-single-stand.css" />
 		<style>
 			.content-box{
 				background-image:url("../../../resources/游戏背景图/中国朝鲜指挥部.png");
 			}
+			.character{
+				background-image:url("../../../resources/人物立绘/彭国辉.png");
+			}	
 		</style>
 	</head>
 	<body>
@@ -32,45 +35,29 @@
 					<div class="punch"></div>
 				</div>
 			</div>
-			<div class="ques-ans">
-				<div class="question-box">
-					我军下一步的行动是？<br>
+			<div class="bottom">
+				<div class="character"></div>
+				<div class="dia-box">
+					<div class="dia">
+						我军上次战役损失惨重，怎么能继续进攻呢？我军应当整军备战，寻找机会。
+					</div>
+					<div class="continue">
+						click to continue.
+					</div>
 				</div>
-				<div class="answer-box">
-					应用敌退我追战术，快速分割穿插敌人，将敌人在撤退的混乱中歼灭
-				</div>
-				<div class="answer-box">
-					利用敌人错误判断，将计就计，示弱于敌，诱敌深入，然后伺机歼灭
-				</div>
-				<div class="answer-box">
-					和美军进行正面作战，以堂堂正正之阵划线平推
+				<div class="name-box">
+					彭国辉
 				</div>
 			</div>
 		</div>
 		<script>
-			var btn=document.getElementsByClassName("answer-box");
-			btn[0].addEventListener
+			var dia=document.getElementsByClassName("dia-box");
+			dia[0].addEventListener
 			(
 				"click",
 				function()
 				{
-					window.open("./dia_5_1.html","_self");
-				}
-			);
-			btn[1].addEventListener
-			(
-				"click",
-				function()
-				{
-					window.open("../../../minigames/drive-demo2/snake.html","_self");
-				}
-			);
-			btn[2].addEventListener
-			(
-				"click",
-				function()
-				{
-					window.open("./dia_5_3.html","_self");
+					window.open("cut_scene_决策2选C_决策5选B.html",);
 				}
 			);
 		</script>
