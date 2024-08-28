@@ -30,30 +30,30 @@ const aimblue = [
 ];
 
 const Up1 = [
-  {x:4,y:3},
-  {x:5,y:3},{x:5,y:2},
-  {x:8,y:16},{x:8,y:17},
-  {x:9,y:15},{x:9,y:16},{x:9,y:17},{x:9,y:18},
-  {x:11,y:4},
-  {x:14,y:7},
-  {x:15,y:1},
+  {x:4,y:3,triggered:false},
+  {x:5,y:3,triggered:false},{x:5,y:2,triggered:false},
+  {x:8,y:16,triggered:false},{x:8,y:17,triggered:false},
+  {x:9,y:15,triggered:false},{x:9,y:16,triggered:false},{x:9,y:17,triggered:false},{x:9,y:18,triggered:false},
+  {x:11,y:4,triggered:false},
+  {x:14,y:7,triggered:false},
+  {x:15,y:1,triggered:false},
 ];
 
 const Up2 = [
-  {x:15,y:3},
-  {x:16,y:3},
-  {x:17,y:3},
+  {x:15,y:3,triggered:false},
+  {x:16,y:3,triggered:false},
+  {x:17,y:3,triggered:false},
 ];
 
 const Down1 = [
-  {x:3,y:3},
-  {x:12,y:2},{x:12,y:3},
+  {x:3,y:3,triggered:false},
+  {x:12,y:2,triggered:false},{x:12,y:3,triggered:false},
 ];
 
 const Down2 = [
-  {x:8,y:13}, 
-  {x:10,y:17},
-  {x:13,y:7},
+  {x:8,y:13,triggered:false}, 
+  {x:10,y:17,triggered:false},
+  {x:13,y:7,triggered:false},
 ];
 
     const createObstacles = (gameboard) => {
@@ -67,23 +67,27 @@ const Down2 = [
     }};
 
     const createAims = (gameboard) =>{
+      const blue=aimblue[0];
+      const green=aimgreen[0];
+      const yellow=aimyellow[0];
       const aimblueElement=document.createElement("div");
       const aimyellowElement=document.createElement("div");
       const aimgreenElement=document.createElement("div");
-      aimblueElement.style.row =aimblue[0].x;
-      aimblueElement.style.column =aimblue[0].y;
+      aimblueElement.style.gridRowStart =blue.x;
+      aimblueElement.style.gridColumnStart =blue.y;
       aimblueElement.classList.add("aimblue");
       gameboard.appendChild(aimblueElement);
-      aimyellowElement.style.row =aimyellow[0].x;
-      aimyellowElement.style.column =aimyellow[0].y;
+      aimyellowElement.style.gridRowStart =yellow.x;
+      aimyellowElement.style.gridColumnStart =yellow.y;
       aimyellowElement.classList.add("aimyellow");
       gameboard.appendChild(aimyellowElement);
-      aimgreenElement.style.row =aimgreen[0].x;
-      aimgreenElement.style.column =aimgreen[0].y;
+      aimgreenElement.style.gridRowStart =green.x;
+      aimgreenElement.style.gridColumnStart =green.y;
       aimgreenElement.classList.add("aimgreen");
       gameboard.appendChild(aimgreenElement);
-    }
-
+    
+  }
+  
     const createUps = (gameboard) =>{
       for(let i=0;i<Up1.length;i++){
         const Up01=Up1[i];

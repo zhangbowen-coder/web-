@@ -22,10 +22,21 @@ body {
     border: 0.25vmin solid black;
 }
 
-.snake {
+.snakeGreen {
     background-color: lime;
     border: 0.25vmin solid black;
 }
+
+.snakeBlue {
+    background-color: blue;
+    border: 0.25vmin solid black;
+}
+
+.snakeYellow {
+    background-color: yellow;
+    border: 0.25vmin solid black;
+}
+
 .food {
     background-color: brown;
     border: 0.25vmin solid black;
