@@ -27,6 +27,11 @@ body {
     -o-border-radius: 10px;
 }
 
+.blank{
+    height: 200px;
+    display: flex;
+}
+
 .form-box {
     position: absolute;
     top: -10%;
