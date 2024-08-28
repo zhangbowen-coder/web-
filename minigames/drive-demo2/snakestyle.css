@@ -1,78 +1,91 @@
 body {
- height: 100vh;
- width: 100vw;
- display: flex;
- justify-content: center;
- align-items: center;
- margin: 0;
- background-color: gray;
-}
-
-#game-board {
-    background-color: black;
-    width: 100vmin;
-    height: 100vmin;
-    display: grid;
-    grid-template-rows: repeat(18,1fr);
-    grid-template-columns: repeat(18,1fr);
-}
-
-.obstacle {
-    background-color: aliceblue;
-    border: 0.25vmin solid black;
-}
-
-.snakeGreen {
-    background-color: lime;
-    border: 0.25vmin solid black;
-}
-
-.snakeBlue {
-    background-color: blue;
-    border: 0.25vmin solid black;
-}
-
-.snakeYellow {
-    background-color: yellow;
-    border: 0.25vmin solid black;
-}
-
-.food {
-    background-color: brown;
-    border: 0.25vmin solid black;
-}
-
-.aimgreen{
-        background-color: lime;
-        border: 0.25vmin solid black;
-}
-
-.aimyellow{
-    background-color: yellow;
-    border: 0.25vmin solid black;
-}
-
-.aimblue{
-    background-color: blue;
-    border: 0.25vmin solid black;
-}
-
-.Up1{
-    background-color: pink;
-    border: 0.25vmin solid black;
-}
-
-.Up2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     background-color: gray;
-    border: 0.25vmin solid black;
-}
-
-.Down1{
-    background-color: gold;
-    border: 0.25vmin solid black;
-}
-
-.Down2{
-    background-color: purple;
-    border: 0.25vmin solid black;
-}
+   }
+   
+   #game-board {
+       background-color:bisque;
+       width: 100vmin;
+       height: 100vmin;
+       display: grid;
+       grid-template-rows: repeat(18,1fr);
+       grid-template-columns: repeat(18,1fr);
+   }
+   
+   .display-board{
+       display: block;
+       position: absolute;
+       background-color: rgba(255, 255, 255, 0.15);
+       width: 180px;
+       height: 450px;
+       top:0px;
+       left: 16%;
+   }
+   
+   .text{
+       font-size: 1.5rem;
+   }
+   
+   .obstacle {
+       background-color: black;
+       border: 0.25vmin solid white;
+   }
+   
+   .snakeGreen {
+       background-image: url(../../resources/素材图/红色小车.jpg);
+       border: 0.25vmin solid black;
+   }
+   
+   .snakeBlue {
+       background-image: url(../../resources/素材图/蓝色小车.jpg);
+       border: 0.25vmin solid black;
+   }
+   
+   .snakeYellow {
+       background-image: url(../../resources/素材图/黄色小车.jpg);
+       border: 0.25vmin solid black;
+   }
+   
+   .food {
+       background-color: brown;
+       border: 0.25vmin solid black;
+   }
+   
+   .aimgreen{
+           background-image: url(../../resources/素材图/红色路线结束点.jpg);
+           border: 0.25vmin solid black;
+   }
+   
+   .aimyellow{
+       background-image: url(../../resources/素材图/黄色路线结束点.jpg);
+       border: 0.25vmin solid black;
+   }
+   
+   .aimblue{
+       background-image: url(../../resources/素材图/蓝色路线结束点.jpg);
+       border: 0.25vmin solid black;
+   }
+   
+   .Up1{
+       background-image: url(../../resources/素材图/up增加物资.jpg);
+   }
+   
+   .Up2{
+       background-image: url(../../resources/素材图/up百分比增加.jpg);
+       border: 0.25vmin solid black;
+   }
+   
+   .Down1{
+       background-image: url(../../resources/素材图/down减少物资.jpg);
+       border: 0.25vmin solid black;
+   }
+   
+   .Down2{
+       background-image: url(../../resources/素材图/down减少油料.jpg);
+       border: 0.25vmin solid black;
+   }
