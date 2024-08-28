@@ -2,7 +2,7 @@
  * @Author: 699574 3331908788@qq.com
  * @Date: 2024-08-26 15:35:21
  * @LastEditors: 699574 3331908788@qq.com
- * @LastEditTime: 2024-08-28 15:33:22
+ * @LastEditTime: 2024-08-28 20:45:07
  * @FilePath: \undefinedc:\Users\win11\Desktop\web\game\snake\game.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -39,6 +39,7 @@ const change = (Event) =>{
 const main = (currentTime) => {
   if(Win){
     alert("win");
+    window.location.href='../../body/html/chapter-1/dia_5_2.html';
     return;
   }
   if(gameover){

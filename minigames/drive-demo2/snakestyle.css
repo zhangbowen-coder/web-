@@ -89,3 +89,11 @@ body {
        background-image: url(../../resources/素材图/down减少油料.jpg);
        border: 0.25vmin solid black;
    }
+
+   .jump{
+    font-size: 1.5rem;
+    display: block;
+    position:absolute;
+    right:24%;
+    top: 0px;
+   }
