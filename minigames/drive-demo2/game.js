@@ -44,6 +44,7 @@ const main = (currentTime) => {
   }
   if(gameover){
     alert("lose");
+    location.reload();
       return;
   }
   GetBonusOrPunish();
