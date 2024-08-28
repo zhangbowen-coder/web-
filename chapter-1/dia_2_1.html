@@ -5,18 +5,13 @@
 		<title>
 			第一章
 		</title>
-		<link rel="stylesheet" href="../../css/choice-stand.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../../css/dialog-single-stand.css" />
 		<style>
+			.character{
+				background-image:url("../../../resources/人物立绘/彭国辉.png");
+			}
 			.content-box{
 				background-image:url("../../../resources/游戏背景图/中国中南海指挥部1.jpg");
-			}
-
-			.answer-box{
-				font-size:2em;
-			}
-
-			.question-box{
-				font-size:3em;
 			}
 		</style>
 	</head>
@@ -40,39 +35,34 @@
 					<div class="punch"></div>
 				</div>
 			</div>
-			<div class="ques-ans">
-				<div class="question-box">
-					是否领兵出征？
+			<div class="bottom">
+				<div class="character"></div>
+				<div class="dia-box">
+					<div class="dia">
+						主席，这几个月我之前遗留下来的伤更加严重了，希望能留在后方养精蓄锐，我国将星辈出，必有他人堪当此大任。
+					</div>
+					<div class="continue">
+						click to continue.
+					</div>
 				</div>
-				<div id="ans1" class="answer-box">
-					以身体不适，需要休养为由，请主席另寻人选
-				</div>
-				<div id="ans2" class="answer-box">
-					国难当头，唯有出征！
+				<div class="name-box">
+					彭国辉
 				</div>
 			</div>
 		</div>
 		<script>
-			var button=document.getElementsByClassName("answer-box");
-			button[0].addEventListener
+			var dia=document.getElementsByClassName("dia-box");
+			dia[0].addEventListener
 			(
 				"click",
 				function()
 				{
-					window.open("./dia_2_1.html","_self");
-				}
-			);
-			button[1].addEventListener
-			(
-				"click",
-				function()
-				{
-					window.open("./dia_2_2.html","_self");
+					alert("达成彩蛋结局");
+					window.open("./ending_egg.html","_self");
 				}
 			);
 		</script>
 		<script src="../Js/User.js"></script>
 		<script src="../Js/History.js"></script>
-		<script type="text/javascript" src="../../Js/Battle.js"></script>
 	</body>
-</html>
+	</html>
