@@ -126,9 +126,9 @@ body{
 	font-size:x-large;
 	text-indent:2em;
 	font-weight:600;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-color:black;
+	opacity:60%;
+	color:white;
 }
 
 .continue{
