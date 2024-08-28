@@ -1,0 +1,146 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	/* 调试用框边 */
+	/* border-style:solid;
+	border-width:1px;
+	border-color:black; */
+	font-family:STKaiti,KaiTi;
+}
+
+body{
+	background-image:none;
+	width:100%;
+	height:100%;
+	overflow:scroll;
+	min-width:1300px;
+	min-height:750px;
+}
+
+.content-box{
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:visible;
+	min-width:1300px;
+	min-height:750px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.top{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	min-width:1300px;
+	height:5em;
+}
+
+.button-box{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	position:absolute;
+	top:15px;
+	left:15px;
+	height:2.5em;
+	width:10em;
+}
+
+.button{
+	width:2em;
+	height:2em;
+	display:inline-block;
+	color:white;
+	background-color:black;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	border-width:1px;
+	border-radius:20%;
+}
+
+.setting{
+	background-image:url(../../resources/icons/setting.png);
+}
+
+.look-back{
+	background-image:url(../../resources/icons/look-back.png);
+}
+
+.pass{
+	background-image:url(../../resources/icons/pass.png);
+}
+
+
+.button span{
+	display:none;
+}
+
+.slide-box{
+	display:flex;
+	flex-direction:row;
+	justify-content:left;
+	position:absolute;
+	top:15px;
+	right:15px;
+	height:2.5em;
+	width:20em;
+	
+}
+
+.slide-one{
+	width:50%;
+	height:100%;
+	background-image:linear-gradient(to left,red,white);
+}
+
+.slide-two{
+	width:50%;
+	height:100%;
+	background-image:linear-gradient(to right,blue,white);
+}
+
+.punch{
+	width:5em;
+	height:2.5em;
+	position:absolute;
+	top:0;
+	left:7.5em;
+	background-image:url(../../resources/素材图/拳头素材.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.dia-box{
+	position:absolute;
+	left:15%;
+	bottom:0;
+	width:70%;
+	height:220px;
+	border-style:solid;
+	border-width:2px;
+	border-color:black;
+	font-size:x-large;
+	text-indent:2em;
+	font-weight:600;
+	background-color:black;
+	opacity:60%;
+	color:white;
+}
+
+.continue{
+	position:absolute;
+	right:0;
+	bottom:0;
+	height:fit-content;
+	width:fit-content;
+	font-size:x-large;
+}
+
+.dia{
+	text-indent:2em;
+	position:absolute;
+}
