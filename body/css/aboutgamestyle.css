@@ -25,18 +25,19 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url("../../resources/background_images/index.png");
-    background-size: cover;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
 
 .Title{
-    font-size: 3rem;
+    font-size: 7vh;
     font-weight: 300;
     text-align: center;
     color: #fff;
     position: absolute;
-    bottom: 550px;
+    top:10%;
 }
 
 .textbox{
@@ -45,9 +46,9 @@ body{
     background-color: rgba(255,255,255,0.2);
     align-items: center;
     position: absolute;
-    bottom: 100px;
-    height: 390px;
-    width: 600px;
+    bottom: 10vh;
+    height: 60vh;
+    width: 40vw;
     background: black;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -59,6 +60,6 @@ body{
 }
 
 .text{
-    font-size: --l;
+    font-size: 1vw;
     color: #fff;
 }

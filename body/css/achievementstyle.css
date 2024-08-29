@@ -12,7 +12,7 @@ body{
     background-image:url("../../resources/background_images/achievement.jpg");
     background-attachment:fixed;
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100vw 100vh;
 }
 
 .wrapper{
@@ -25,9 +25,9 @@ body{
 }
 
 .title{
-    margin:10px,auto,0px;
+    margin:1vh,auto,0px;
     font-family:"Microsoft YaHei", "宋体", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;
-    font-size:3em;
+    font-size:3vw;
     font-weight:600;
     text-align:center;
     color:aliceblue;
@@ -37,19 +37,19 @@ body{
     width:100%;
     display: flex;
     justify-content: space-evenly;    
-    margin-top:60px;
+    margin-top:8vh;
 }
 
 .achievementbox{
     flex-grow:1;
-    height:200px;
+    height:28vh;
     /* display:flex;
     justify-content:center; */
 }
 
 .card{
-    height:200px;
-    width:200px;
+    height:28vh;
+    width:13vw;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     border-color:aliceblue;
@@ -74,10 +74,10 @@ body{
     border-width:2px;
     border-radius:20%;
     font-family:"Microsoft YaHei", "宋体", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;
-    font-size:1.5em;
+    font-size:1.5vw;
     font-weight:600;
-    height:200px;
-    width:200px;
+    height:28vh;
+    width:13vw;
     backface-visibility:hidden;
     opacity:60%;
 }
@@ -89,8 +89,8 @@ body{
 .button{
     display:inline-block;
     background-color:dimgray;
-    font-size:2em;
-    margin-top:10px;
+    font-size:2vw;
+    margin-top:1vh;
     text-decoration:none;
     color:aliceblue;
     opacity:70%;
@@ -101,8 +101,8 @@ body{
 :hover.button{
     display:inline-block;
     background-color:black;
-    font-size:2em;
-    margin-top:10px;
+    font-size:2vw;
+    margin-top:1vh;
     text-decoration:none;
     color:aliceblue;
     border-radius:20%;   

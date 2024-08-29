@@ -9,7 +9,7 @@ body{
 }
 ul.guide{
 	list-style-type:none;
-	height:35px;
+	height:3vh;
 	background-color:dimgray;
 }
 li.guide{
@@ -20,7 +20,7 @@ a.guide{
 	color:white;
 	background-color:dimgray;
 	text-decoration:none;
-	font-size:x-large;
+	font-size:2vw;
 }
 a:hover.guide{
 	display:block;
@@ -30,11 +30,11 @@ a:hover.guide{
 }
 ul.intro{
 	list-style-type:none;
-	margin-top:50px;
+	margin-top:10vh;
 }
 li.intro{
 	display:inline-block;
-	height: 300px;
+	height: 33vh;
 	width:20%;
 	margin:auto;
 }
@@ -42,7 +42,8 @@ a.intro{
 	background-color:dimgray;
 	display:block;
 	text-decoration:none;
-	width:150px;
+	font-size:1vw;
+	width:10vw;
 	margin:auto;
 	color:white;
 }
@@ -50,7 +51,12 @@ a:hover.intro{
 	background-color:black;
 	display:block;
 	text-decoration:none;
-	width:150px;
+	width:10vw;
 	margin:auto;
 	color:white;
 }	
+
+img {
+	width: 15vw;
+	height: 30vh;
+}

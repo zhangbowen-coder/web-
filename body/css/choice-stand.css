@@ -13,29 +13,31 @@ body{
 	background-image:none;
 	width:100%;
 	height:100%;
-	overflow:scroll;
-	min-width:1300px;
-	min-height:750px;
+	overflow:hidden;
+	min-width:100vw;
+	min-height:100vh;
 }
 
 .content-box{
 	position:relative;
 	width:100%;
 	height:100%;
-	overflow:visible;
-	min-width:1300px;
-	min-height:750px;
+	overflow:hidden;
+	min-width:100vw;
+	min-height:100vh;
 	background-repeat:no-repeat;
-	background-size:cover;
+	background-size:100vw 100vh;
+	background-position:center;
+	background-attachment: fixed;
 }
 
 .top{
 	position:absolute;
-	top:0;
+	top:-2vh;
 	left:0;
 	width:100%;
-	min-width:1300px;
-	height:5em;
+	min-width:100vw;
+	height:5vh;
 }
 
 .button-box{
@@ -43,15 +45,15 @@ body{
 	flex-direction:row;
 	justify-content:space-evenly;
 	position:absolute;
-	top:15px;
-	left:15px;
-	height:2.5em;
-	width:10em;
+	top:1vw;
+	left:1vh;
+	height:6vh;
+	width:10vw;
 }
 
 .button{
-	width:2em;
-	height:2em;
+	width:3vw;
+	height:6vh;
 	display:inline-block;
 	color:white;
 	background-color:black;
@@ -60,6 +62,7 @@ body{
 	background-position:center;
 	border-width:1px;
 	border-radius:20%;
+	position: relative;
 }
 
 .setting{
@@ -84,10 +87,10 @@ body{
 	flex-direction:row;
 	justify-content:left;
 	position:absolute;
-	top:15px;
-	right:15px;
-	height:2.5em;
-	width:20em;
+	top:1vh;
+	right:1vw;
+	height:6vh;
+	width:20vw;
 	
 }
 
@@ -104,11 +107,11 @@ body{
 }
 
 .punch{
-	width:5em;
-	height:2.5em;
+	height:6vh;
+	width:20vw;
 	position:absolute;
 	top:0;
-	left:7.5em;
+	left:7.5vw;
 	background-image:url(../../resources/素材图/拳头素材.png);
 	background-repeat:no-repeat;
 	background-size:contain;
@@ -124,14 +127,14 @@ body{
 	top:15%;
 	justify-content:space-evenly;
 	background-image:url("../../resources/游戏背景图/报纸.jpg");
-	background-size:cover;
+	background-size:50vw 70vh;
 	background-position:center;
 	background-repeat:no-repeat;
 	font-weight:600;
 }
 
 .question-box{
-	font-size:2em;
+	font-size:2.5vw;
 	text-align:center;
 	width:80%;
 	margin-left:10%;
@@ -142,7 +145,7 @@ body{
 .answer-box{
 	width:80%;
 	margin-left:10%;
-	font-size:1.5em;
+	font-size:1.5vw;
 	height:fit-content;
 	text-align:center;
 	color:white;

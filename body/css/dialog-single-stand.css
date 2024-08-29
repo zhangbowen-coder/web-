@@ -8,30 +8,31 @@
 body{
 	width:100%;
 	height:100%;
-	overflow:scroll;
-	min-width:1300px;
-	min-height:750px;
+	overflow:hidden;
+	min-width:100vw;
+	min-height:100vh;
 }
 
 .content-box{
 	position:relative;
 	width:100%;
 	height:100%;
-	overflow:visible;
-	min-width:1300px;
-	min-height:750px;
+	overflow:hidden;
+	min-width:100vw;
+	min-height:100vh;
 	background-repeat:no-repeat;
-	background-size:cover;
+	background-size:100vw 100vh;
 	background-position:center;
+	background-attachment: fixed;
 }
 
 .top{
 	position:absolute;
-	top:0;
+	top:-2vh;
 	left:0;
 	width:100%;
-	min-width:1300px;
-	height:5em;
+	min-width:100vw;
+	height:5vh;
 }
 
 .button-box{
@@ -39,18 +40,18 @@ body{
 	flex-direction:row;
 	justify-content:space-evenly;
 	position:absolute;
-	top:15px;
-	left:15px;
-	height:2.5em;
-	width:10em;
+	top:1vw;
+	left:1vh;
+	height:6vh;
+	width:10vw;
 	/* border-style:solid;
 	border-width:1px;
 	border-color:black; */
 }
 
 .button{
-	width:2em;
-	height:2em;
+	width:3vw;
+	height:6vh;
 	display:inline-block;
 	color:white;
 	background-color:black;
@@ -59,6 +60,8 @@ body{
 	background-position:center;
 	border-width:1px;
 	border-radius:20%;
+	position: relative;
+	
 }
 
 .setting{
@@ -83,10 +86,10 @@ body{
 	flex-direction:row;
 	justify-content:left;
 	position:absolute;
-	top:15px;
-	right:15px;
-	height:2.5em;
-	width:20em;
+	top:1vh;
+	right:1vw;
+	height:6vh;
+	width:20vw;
 	border-style:solid;
 	border-width:1px;
 	border-color:black;
@@ -105,11 +108,12 @@ body{
 }
 
 .punch{
-	width:5em;
-	height:2.5em;
+
+	height:6vh;
+	width:20vw;
 	position:absolute;
 	top:0;
-	left:7.5em;
+	left:7.6vw;
 	background-image:url(../../resources/素材图/拳头素材.png);
 	background-repeat:no-repeat;
 	background-size:contain;
@@ -122,22 +126,22 @@ body{
 	/* border-style:solid;
 	border-width:2px;
 	border-color:black; */
-	height:400px;
-	width:1200px;
+	height:40vh;
+	width:120vw;
 	/* display:flex;
 	flex-direction:row; */
 }
 
 .dia-box{
 	position:absolute;
-	left:300px;
+	left:19vw;
 	bottom:0;
-	width:900px;
-	height:220px;
+	width:60vw;
+	height:30vh;
 	border-style:solid;
 	border-width:2px;
 	border-color:black;
-	font-size:x-large;
+	font-size:1.5vw;
 	text-indent:2em;
 	font-weight:600;
 	background-color:rgba(0,0,1,60%);
@@ -150,17 +154,17 @@ body{
 }
 
 .character{
-	position:absolute;
-	left:0;
-	bottom:0;
+	display: flex;
 	border-style:none;
 	border-width:2px;
 	border-color:black;
-	height:400px;
-	width:300px;
+	height:40vh;
+	width: 20vw;
 	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-size:contain;
+	position: absolute;
+    bottom: 0; /* 图片靠底 */
+    left: 0;
 }
 
 .character img{
@@ -170,14 +174,14 @@ body{
 
 .name-box{
 	position:absolute;
-	left:300px;
-	bottom:220px;
+	left:19vw;
+	bottom:34vh;
 	border-style:solid;
 	border-width:2px;
 	border-color:black;
-	height:1.5em;
-	width:3.5em;
-	font-size:xx-large;
+	height:2vh;
+	width:7vw;
+	font-size:2vw;
 	font-weight:600;
 	text-align:center;
 	background-color:rgba(0,0,1,60%);

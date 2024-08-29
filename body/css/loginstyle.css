@@ -9,36 +9,37 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("../../resources/background_images/index.png");
-    background-size: cover;
+    background-size: 100vw 100vh;
     background-attachment: fixed;
     background-position: center;
+    background-repeat:no-repeat;
 }
 
 .LoginContainer {
     background-color: rgba(255, 255, 255, 0.15);
-    width: 650px;
-    height: 415px;
-    border-radius: 10px;
+    width: 42vw;
+    height: 60vh;
+    border-radius: 2vh;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+    -ms-border-radius: 2vh;
+    -o-border-radius: 2vh;
 }
 
 .blank{
-    height: 200px;
+    height: 28vh;
     display: flex;
 }
 
 .form-box {
     position: absolute;
-    top: -10%;
-    left: 5%;
-    width: 320px;
-    height: 500px;
-    border-radius: 5px;
+    top: -6vh;
+    left:2vw;
+    width: 21vw;
+    height: 72vh;
+    border-radius: 2vh;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
@@ -49,6 +50,10 @@ body {
     -moz-transition: 0.5s ease-in-out;
     -ms-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
+    -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+    -ms-border-radius: 2vh;
+    -o-border-radius: 2vh;
 }
 
 .Red{
@@ -64,12 +69,12 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 500px;
-    border-radius: 45px;
-    -webkit-border-radius: 45px;
-    -moz-border-radius: 45px;
-    -ms-border-radius: 45px;
-    -o-border-radius: 45px;
+    height: 100%;
+    border-radius: 3.5vw;
+    -webkit-border-radius: 3.5vw;
+    -moz-border-radius: 3.5vw;
+    -ms-border-radius: 3.5vw;
+    -o-border-radius: 3.5vw;
 }
 
 .hidden {
@@ -79,10 +84,10 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 2vh;
     text-transform: uppercase;
     color: #fff;
-    font-size: 3rem;
+    font-size: 7vh;
     letter-spacing: 5px;
 }
 
@@ -92,11 +97,11 @@ input {
     color: #fff;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 10px 0;
-    text-indent: 10px;
-    margin: 8px 0;
-    font-size: 14px;
-    letter-spacing: 2px;
+    padding: 1vw 0;
+    text-indent: 1.5vh;
+    margin: 2vh 0;
+    font-size: 2.5vh;
+    letter-spacing: 1vh;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -119,7 +124,7 @@ input:focus::placeholder {
 
 .form-box button {
     width: 70%;
-    margin-top: 55px;
+    margin-top: 8vh;
     background-color: #f6f6f6;
     outline: none;
     border-radius: 8px;
@@ -128,6 +133,13 @@ input:focus::placeholder {
     letter-spacing: 2px;
     border: none;
     cursor: pointer;
+    font-size: 3vh;
+}
+
+.button1{
+height: 5vh;
+width: 5vw;
+font-size: min(2vh,1vw);
 }
 
 .form-box button:hover {
@@ -161,7 +173,7 @@ input:focus::placeholder {
 
 .con-box h2 {
     color: aqua;
-    font-size: 25px;
+    font-size: 3.5vh;
     font-weight: bold;
     letter-spacing: 3px;
     text-align: center;
@@ -169,7 +181,7 @@ input:focus::placeholder {
 }
 
 .con-box p {
-    font-size: 12px;
+    font-size: 2vh;
     letter-spacing: 2px;
     text-align: center;
 }
@@ -209,13 +221,14 @@ input:focus::placeholder {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    font-size: 2vh;
 }
 
 .FormTitle{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 .text-red{

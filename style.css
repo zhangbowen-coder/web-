@@ -26,17 +26,16 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("./resources/background_images/index.png");
-    background-size: cover;
+    background-size: 100vw 100vh;
     background-attachment: fixed;
     background-position: center;
-    
+    background-repeat: no-repeat;
 }
 
 .Buttons{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     flex-direction: column;
 }
 
@@ -53,24 +52,24 @@ a:link {
   }
 
 .InterfaceButton{
-    
    color: #fff;
-   height: 50px;
-   width: 300px;
+   height: 8vh;
+   width: 20vw;
    border-radius: 45px;
    border-style: solid;
    border-color: aqua;
    text-align: center;
-   margin: 10px 15px 20px 15px;
-   font-size:2rem;
+   margin-top: 2vh;
+   margin-bottom: 2vh;
+   font-size:5vh;
    box-sizing: border-box;
+   cursor:pointer;
+   background-position: center;
+   background-color: rgba(255, 255, 255, 0.15);
    -webkit-border-radius: 45px;
    -moz-border-radius: 45px;
    -ms-border-radius: 45px;
    -o-border-radius: 45px;
-   cursor:pointer;
-   background-position: center;
-   background-color: rgba(255, 255, 255, 0.15);
 }
 
 .TopBar{
