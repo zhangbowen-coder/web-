@@ -40,36 +40,34 @@ body {
 }
 
 a:link {
-    color: #0000EE;
+    color: hwb(11 7% 5%);
   }
   
   a:visited {
-    color: #0000EE;
+    color: rgb(230, 229, 229);
   }
   
   a:active {
-    color: #0000EE; 
+    color: hwb(0 20% 16%); 
   }
 
 .InterfaceButton{
-   color: #fff;
+   color: hwb(0 96% 1%);
    height: 8vh;
    width: 20vw;
-   border-radius: 45px;
-   border-style: solid;
-   border-color: aqua;
+   
+   
    text-align: center;
    margin-top: 2vh;
    margin-bottom: 2vh;
-   font-size:5vh;
+   font-size: 5vh;
    box-sizing: border-box;
    cursor:pointer;
    background-position: center;
-   background-color: rgba(255, 255, 255, 0.15);
-   -webkit-border-radius: 45px;
-   -moz-border-radius: 45px;
-   -ms-border-radius: 45px;
-   -o-border-radius: 45px;
+   background-color: hwb(0 10% 89% / 0.576);
+  
+   
+   
 }
 
 .TopBar{
