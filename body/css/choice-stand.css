@@ -126,11 +126,13 @@ body{
 	left:25%;
 	top:15%;
 	justify-content:space-evenly;
-	background-image:url("../../resources/游戏背景图/报纸.jpg");
+	border-style: solid;
+	background-color:rgba(0,0,1,60%);
 	background-size:50vw 70vh;
 	background-position:center;
 	background-repeat:no-repeat;
 	font-weight:600;
+	border-radius: 15px;
 }
 
 .question-box{
@@ -149,12 +151,14 @@ body{
 	height:fit-content;
 	text-align:center;
 	color:white;
-	background-image:url(../../resources/游戏背景图/选项.png);
+	background-color:#27272a;
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
 }
 
 .answer-box:hover{
-	color:black;
+	color:#d14848;
 }
