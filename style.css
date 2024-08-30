@@ -40,34 +40,32 @@ body {
 }
 
 a:link {
-    color: hwb(11 7% 5%);
+    color: #0000EE;
   }
   
   a:visited {
-    color: rgb(230, 229, 229);
+    color: hwb(0 90% 6%);
   }
   
   a:active {
-    color: hwb(0 20% 16%); 
+    color: #0000EE; 
   }
 
 .InterfaceButton{
-   color: hwb(0 96% 1%);
-   height: 8vh;
+   color: #fff;
+   height: 7vh;
    width: 20vw;
-   
-   
    text-align: center;
    margin-top: 2vh;
    margin-bottom: 2vh;
-   font-size: 5vh;
+   font-size:4vh;
    box-sizing: border-box;
    cursor:pointer;
    background-position: center;
-   background-color: hwb(0 10% 89% / 0.576);
-  
-   
-   
+   background-color: hwb(0 10% 89% / 0.586);
+   font-family: "楷体";
+   font-weight: bold;
+   padding: 8px 20px 10px 20px;
 }
 
 .TopBar{
