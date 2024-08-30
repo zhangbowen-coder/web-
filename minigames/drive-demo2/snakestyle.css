@@ -9,7 +9,7 @@ body {
    }
    
    #game-board {
-       background-color:bisque;
+       background-image: url(../../resources/素材图/土土土.png);
        width: 100vmin;
        height: 100vmin;
        display: grid;
@@ -32,62 +32,63 @@ body {
    }
    
    .obstacle {
-       background-color: black;
-       border: 0.25vmin solid white;
+    background-image: url(../../resources/素材图/草、.png);
+       
    }
    
    .snakeGreen {
        background-image: url(../../resources/素材图/红色小车.jpg);
-       border: 0.25vmin solid black;
+       
    }
    
    .snakeBlue {
        background-image: url(../../resources/素材图/蓝色小车.jpg);
-       border: 0.25vmin solid black;
+       
    }
    
    .snakeYellow {
        background-image: url(../../resources/素材图/黄色小车.jpg);
-       border: 0.25vmin solid black;
+       
    }
    
    .food {
        background-color: brown;
-       border: 0.25vmin solid black;
+       
    }
    
    .aimgreen{
            background-image: url(../../resources/素材图/红色路线结束点.jpg);
-           border: 0.25vmin solid black;
+           
    }
    
    .aimyellow{
        background-image: url(../../resources/素材图/黄色路线结束点.jpg);
-       border: 0.25vmin solid black;
+      
    }
    
    .aimblue{
        background-image: url(../../resources/素材图/蓝色路线结束点.jpg);
-       border: 0.25vmin solid black;
+       
    }
    
    .Up1{
-       background-image: url(../../resources/素材图/up增加物资.jpg);
+       background-image: url(../../resources/素材图/加号3.png);
+       
    }
    
    .Up2{
-       background-image: url(../../resources/素材图/up百分比增加.jpg);
-       border: 0.25vmin solid black;
+       background-image: url(../../resources/素材图/加加1.png);
+       
    }
    
    .Down1{
        background-image: url(../../resources/素材图/down减少物资.jpg);
-       border: 0.25vmin solid black;
+       
    }
    
    .Down2{
        background-image: url(../../resources/素材图/down减少油料.jpg);
-       border: 0.25vmin solid black;
+       
    }
 
    .jump{
