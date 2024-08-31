@@ -34,6 +34,8 @@ class dom_node
 	}
 };
 
+var miniGameUrl = "../../minigames/drive-demo2/snake.html";
+
 function form(node,html_node)//node:当前节点(dom_node类对象);html_node:当前节点对应的html节点(Element/Node类对象)
 {
 	for(let i=0;i<node.children.length;i++)
@@ -45,6 +47,12 @@ function form(node,html_node)//node:当前节点(dom_node类对象);html_node:�
 		form(node.children[i],child_element);
 	}
 }
+
+var miniGameNode = new dom_node(
+	[],
+	"div",
+	{"class":"dia"}
+);
 
 var btn1_node=new dom_node
 (
@@ -150,6 +158,12 @@ var bottom_node=new dom_node
 	"div",
 	{"class":"bottom"}
 );
+var content_box_minigame_node=new dom_node
+(
+	[top_node,bottom_node,miniGameNode],
+	"div",
+	{"class":"content-box"}
+);
 
 //以下为单人物对话的html
 var content_box_single_node=new dom_node
@@ -233,7 +247,7 @@ var video_node=new dom_node
 (
 	[source1,source2],
 	"video",
-	{"class":"video"}
+	{}
 );
 
 var content_box_cut_node=new dom_node
@@ -282,6 +296,7 @@ var forms=
 	"cut":content_box_cut_node,
 	"ending":content_box_ending_node,
 	"paper":content_box_paper_node,
+	"minigame":content_box_minigame_node,
 };
 
 var css=
@@ -291,7 +306,8 @@ var css=
 	"choice":"../css/choice-stand.css",
 	"cut":"../css/cut-stand.css",
 	"ending":"../css/ending.css",
-	"paper":"../css/paper.css"
+	"paper":"../css/paper.css",
+	"minigame":"../css/dialog-single-stand.css",
 }
 
 var story=
@@ -303,6 +319,7 @@ var story=
 		"next":["cut"],
 		"ptr":0
 	},
+	
 	"j3_1":{
 		"type":"choice",//页面类型，参见上面的forms变量的字符串
 		"content":
@@ -385,7 +402,7 @@ var story=
 				["video/mp4","../../resources/视频/决策3选B.mp4"],
 				["video/webm","../../resources/视频/webm格式/决策3选B.webm"],
 			],
-			"next":[j3B_1_3],//下个节点的编号
+			"next":["j3B_1_3"],//下个节点的编号
 			"ptr":0
 	},
 	"j3B_1_3":{
@@ -573,7 +590,7 @@ var story=
 		],
 		
 		"bgi":"../../resources/游戏背景图/美军朝鲜指挥部",//背景图片路径,没有就是空串
-		"next":["situation3_j6_1","situation3_j6_1","situation3_j6_1"],//下个节点的编号
+		"next":["situation3_j6_1_1","situation3_j6_1_1","situation3_j6_1_1"],//下个节点的编号
 		"ptr":0
 	},
     "situation3_j6_1_1":{
@@ -585,7 +602,7 @@ var story=
 	
 		"bgi":"../../resources/游戏背景图/美军朝鲜指挥部",//背景图片路径,没有就是空串
 		"chara":["../../resources/人物立绘/中国士兵.jpg","../../resources/人物立绘/李德胜.png"],//人物立绘路径，没有就是空串
-		"next":["situation3_j6_2"],//下个节点的编号
+		"next":["situation3_j6_1_2"],//下个节点的编号
 		"ptr":0
 	},
     "situation3_j6_1_2":{
@@ -596,7 +613,7 @@ var story=
 			["video/mp4","../../resources/视频/webm格式/决策0进0.5（低画质）.webm"],
 		],
 	
-		"next":["situation3_j6_3"],//下个节点的编号
+		"next":["situation3_j6_1_3"],//下个节点的编号
 		"ptr":0
 	},
 	"situation3_j6_1_3":{
@@ -676,7 +693,7 @@ var story=
 		],
 	
 		"bgi":"../../resources/游戏背景图/美军朝鲜指挥部",//背景图片路径,没有就是空串
-		"next":["situation3_j8A_1_1","situation3_j8B_1-1"],//下个节点的编号
+		"next":["situation3_j8A_1_1","situation3_j8B_1_1"],//下个节点的编号
 		"ptr":0
 	},
 	"situation3_j8A_1_1":{
@@ -728,29 +745,23 @@ var story=
 	"cut": {
 		"type": "cut",
 			"content":
-		[
-
-			["video/mp4", "../../resources/视频/开场视频压缩版.mp4"],
-			["video/webm", "../../resources/视频/webm格式/开场视频压缩版.webm"]
-
-		],
-
+			[
+				["video/mp4", "../../resources/视频/开场视频压缩版.mp4"],
+				["video/webm", "../../resources/视频/webm格式/开场视频压缩版.webm"]
+			],
 			"next": ["intro"],
-				"ptr": 0
+			"ptr": 0
 	},
-
-
 	"intro": {
 		"type": "single",//页面类型，参见上面的forms变量的字符串
-			"content":
+		"content":
 		[
 			[0,"李德胜", "当前新罗形势危急，联合国军来势汹汹，这已严重威胁到我国东北的和平。国辉，你是否愿意担起大任，领兵出征，保卫我国边疆？"]
 		],
-
-			"bgi": "../../resources/游戏背景图/中国中南海指挥部1.jpg",//背景图片路径,没有就是空串
-				"chara": ["../../resources/人物立绘/李德胜.png"],//人物立绘路径，没有就是空串
-					"next": ["j1-1"],//下个节点的编号
-						"ptr": 0
+		"bgi": "../../resources/游戏背景图/中国中南海指挥部1.jpg",//背景图片路径,没有就是空串
+		"chara": ["../../resources/人物立绘/李德胜.png"],//人物立绘路径，没有就是空串
+		"next": ["j1_1"],//下个节点的编号
+		"ptr": 0
 	},
 
 	"j1_1": {
@@ -822,7 +833,7 @@ var story=
 	},
 
 
-	"j1b-1-3": {
+	"j1b_1_3": {
 		"type": "single",//页面类型，参见上面的forms变量的字符串
 			"content":
 		[
@@ -859,9 +870,14 @@ var story=
 						
 	"bgi": "../../resources/游戏背景图/中国朝鲜指挥部.jpg",//背景图片路径,没有就是空串
 			"chara": ["../../resources/人物立绘/彭德辉.png"],//人物立绘路径，没有就是空串
-			"next": ["j2_1"],//下个节点的编号
+			"next": ["littlegame1"],//下个节点的编号
 			"ptr": 0
 						},
+	"littlegame1":{
+		"type":"minigame",
+		"url":"../../minigames/drive-demo2/snake.html",
+		"next":[],
+	},
 
 	"j2_1": {
 		"type": "choice",//页面类型，参见上面的forms变量的字符串
@@ -877,9 +893,6 @@ var story=
 					"next": [2],//下个节点的编号
 						"ptr": 0
 	},
-
-
-
 	"j2a_1_1": {
 		"type": "single",//页面类型，参见上面的forms变量的字符串
 			"content":
@@ -943,7 +956,7 @@ var story=
 
 			"bgi": "../../resources/游戏背景图/中国朝鲜指挥部.png",//背景图片路径,没有就是空串
 				"chara": ["../../resources/人物立绘/中国参谋2.png", "../../resources/人物立绘/彭德辉.png"],//人物立绘路径，没有就是空串
-					"next": ["j4-2"],//下个节点的编号
+					"next": ["j4_2"],//下个节点的编号
 						"ptr": 0
 	},
 
@@ -972,7 +985,7 @@ var story=
 
 			"bgi": "../../resources/游戏背景图/中国朝鲜指挥部.png",//背景图片路径,没有就是空串
 				//人物立绘路径，没有就是空串
-				"next": ["j2c-1-3"],//下个节点的编号
+				"next": ["j2c_1_3"],//下个节点的编号
 					"ptr": 0
 	},
 	"j2c_1_3": {
@@ -1664,12 +1677,25 @@ var story=
 	},
 };
 
-var now=story[0],next=story["cut"];//记录现在是那个故事节点。
+var now=story[0];
+var next=story["cut"];//记录现在是那个故事节点。
+
+var game1 = localStorage.getItem('game1win');
+		  if(game1==='1'){
+		  next = story["j2_1"];
+		  game1=0;
+		  localStorage.setItem('game1win','0');
+		  window.next = next;}
 
 var trans=function()
 {
+	console.log("IN");
+	console.log(now.ptr);
+	console.log(now.content.length);
+	
 	if(now.ptr==now.content.length)
 	{
+		
 		let content_box=document.querySelector(".content-box");
 		if(now.type!=next.type)
 		{
@@ -1680,11 +1706,11 @@ var trans=function()
 			link.setAttribute("href",css[next.type]);
 		}
 		now=next;
-		content_box.style.backgroundImage="url("+next.bgi+")";
 		let dia,name_b,text,name,dia_box;
 		switch(next.type)
 		{
 			case "single":
+				content_box.style.backgroundImage="url("+next.bgi+")";
 				dia=document.querySelector(".dia");
 				name_b=document.querySelector(".name-box");
 				name=document.createTextNode(next.content[0][1]);
@@ -1700,13 +1726,17 @@ var trans=function()
 					"click",
 					function()
 					{
+						alert("IN");
 						if(now.ptr==now.content.length)
+						{
 							next=story[now.next[0]];
+						}
 						trans();
 					}
 				);
 				break;
 			case "none":
+				content_box.style.backgroundImage="url("+next.bgi+")";
 				dia=document.querySelector(".dia-box");
 				text=document.createTextNode(next.content[0]);
 				dia.append(text);
@@ -1724,6 +1754,7 @@ var trans=function()
 				);
 				break;
 			case "choice":
+				content_box.style.backgroundImage="url("+next.bgi+")";
 				let question_box=document.querySelector(".question-box");
 				let ques_ans=document.querySelector(".ques-ans");
 				text=document.createTextNode(next.content[0]);
@@ -1731,10 +1762,10 @@ var trans=function()
 				for(let i=1;i<next.content.length;i++)
 				{
 					let child=document.createElement("div");
-					text=document.createTextNode(next.content[next.ptr]);
+					text=document.createTextNode(next.content[i]);
 					ques_ans.appendChild(child);
 					child.setAttribute("class","answer-box");
-					child.setAttribute("id",next.ptr-1)
+					child.setAttribute("id",i)
 					child.append(text);
 					child.addEventListener
 					(
@@ -1766,8 +1797,9 @@ var trans=function()
 						trans();
 					}
 				);
-				video.setAttribute("autoplay","true");
-				video.setAttribute("muted","true");
+				video.muted=true;
+				video.autoplay=true;
+				video.controls=true;
 				let btn=document.querySelector(".btn");
 				btn.addEventListener
 				(
@@ -1780,6 +1812,7 @@ var trans=function()
 				);
 				break;
 			case "ending":
+				content_box.style.backgroundImage="url("+next.bgi+")";
 				let content=document.querySelector(".content");
 				text=document.createTextNode(now.content[1]);
 				content.append(text);
@@ -1793,6 +1826,12 @@ var trans=function()
 						window.open("./game.html","_self");
 					}
 				);
+				break;
+			case "minigame":
+				// 保存当前节点信息，以便跳转回来后继续
+				sessionStorage.setItem('miniGameNode', JSON.stringify(now));
+				// 跳转到指定的URL
+				window.location.href = now.url;
 				break;
 		}
 	}
@@ -1808,4 +1847,23 @@ var trans=function()
 	}
 }
 
+// 在原始网页的脚本中
+window.onload = function() {
+	// 检查URL中是否有特定的hash来决定是否继续故事流程
+	if(window.location.hash === '#continueStory') {
+	  // 检查是否有保存的故事节点信息
+	  var miniGameNode = sessionStorage.getItem('miniGameNode');
+	  if(miniGameNode) {
+		// 解析保存的节点信息
+		miniGameNode = JSON.parse(miniGameNode);
+		// 设置下一个故事节点
+		next = miniGameNode;
+		// 清除保存的节点信息
+		sessionStorage.removeItem('miniGameNode');
+		// 继续故事流程
+		trans();
+	  }
+	}
+  }
 trans();
+onload();

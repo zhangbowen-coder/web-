@@ -1,19 +1,3 @@
-/*
- * @Author: 699574 3331908788@qq.com
- * @Date: 2024-08-26 15:35:21
- * @LastEditors: 699574 3331908788@qq.com
- * @LastEditTime: 2024-08-28 16:21:10
- * @FilePath: \undefinedc:\Users\win11\Desktop\web\game\snake\snake.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
-/*
- * @Author: 699574 3331908788@qq.com
- * @Date: 2024-08-26 15:35:21
- * @LastEditors: 699574 3331908788@qq.com
- * @LastEditTime: 2024-08-28 10:07:21
- * @FilePath: \undefinedc:\Users\win11\Desktop\web\game\snake\snake.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 const snakespeed=0;
 
 let snakeOilYellow=22;

@@ -1,8 +1,16 @@
 /*
  * @Author: 699574 3331908788@qq.com
+ * @Date: 2024-08-28 16:22:32
+ * @LastEditors: 699574 3331908788@qq.com
+ * @LastEditTime: 2024-08-31 16:46:45
+ * @FilePath: \undefinedc:\Users\win11\Desktop\web\web-assignment\minigames\drive-demo2\game.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+/*
+ * @Author: 699574 3331908788@qq.com
  * @Date: 2024-08-26 15:35:21
  * @LastEditors: 699574 3331908788@qq.com
- * @LastEditTime: 2024-08-28 20:45:07
+ * @LastEditTime: 2024-08-31 16:13:36
  * @FilePath: \undefinedc:\Users\win11\Desktop\web\game\snake\game.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -39,9 +47,13 @@ const change = (Event) =>{
 const main = (currentTime) => {
   if(Win){
     alert("win");
-    window.location.href='../../body/html/chapter-1/dia_5_2.html';
+    var game1index=1;
+    localStorage.setItem('game1win',game1index);
+    window.location.href="../../body/html/test.html";
     return;
   }
+
+
   if(gameover){
     alert("lose");
     location.reload();
@@ -61,7 +73,7 @@ const main = (currentTime) => {
    window.addEventListener('keydown',remove);
    document.addEventListener('keydown',change);
    
-}
+  }
 
  window.requestAnimationFrame(main);
 
