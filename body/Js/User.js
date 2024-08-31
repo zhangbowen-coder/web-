@@ -151,3 +151,20 @@ class User
     }
 }
 
+
+function saveStory(archiveName) {
+    const storyJSON = JSON.stringify(story);
+    localStorage.setItem(`gameArchive_${archiveName}`, storyJSON);
+  }
+  
+  // 读档函数：从指定的存档名称读取剧情
+  function loadStory(archiveName) {
+    const savedStoryJSON = localStorage.getItem(`gameArchive_${archiveName}`);
+    if (savedStoryJSON) {
+      story = JSON.parse(savedStoryJSON);
+    }
+  }
+
+  function deleteArchive(archiveName) {
+    localStorage.removeItem(`gameArchive_${archiveName}`);
+  }

@@ -1,4 +1,4 @@
-class html_refresher
+ class html_refresher
 {
 	clear()
 	{
