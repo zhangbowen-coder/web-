@@ -8,7 +8,7 @@
             left:calc((100% - 600px) / 2);
             background-color:none;
             background-repeat:no-repeat;
-            background-size:contain;
+            background-size:cover;
             background-position:center;
             font-size:x-large;
             opacity:100%;
@@ -21,7 +21,7 @@
             height:4vh;
             left:calc((100% - 20vw) / 2);
             background-repeat:no-repeat;
-            background-size:contain;
+            background-size:cover;
             background-position:center;
             color:white;
             text-align:center;
