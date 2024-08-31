@@ -173,7 +173,7 @@ var story=
 			["video/mp4","../../../resources/视频/webm格式/双方对峙 - 副本.webm"]
 		],
 	
-		"next":["situation3_j7_3"],//下个节点的编号
+		"next":["situation2_j9A_1_2"],//下个节点的编号
 		"ptr":0
 	},
 	"situation3_j8B_1_1":{
@@ -196,7 +196,7 @@ var story=
 			["video/mp4","../../../resources/视频/webm格式/礼拜攻势 - 副本.webm"]
 		],
 		
-		"next":["situation3_j7_3"],//下个节点的编号
+		"next":["situation2_j9B_1_2"],//下个节点的编号
 		"ptr":0
 	},
 	0: {
