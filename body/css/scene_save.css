@@ -1,0 +1,107 @@
+#box
+{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 150vh;
+    height: 100vh; 
+    background-image: url('../img/system/menu_save_bg.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+}
+@media screen and (max-width: 150vh){
+    #box{
+        width: 100vw;
+    }
+}
+
+#box_1{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10rem;
+
+}
+#menu{
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    top:10%;
+    font-size: 40rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.file{
+    position: relative;
+    width: 80%;
+    height: 22%;
+    top:-2rem;
+    /* background-color: blue; */
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2rem solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5); /* 存档为空时显示为半透明 */
+    transition: box-shadow 500ms;
+}
+.file_name{
+    position: absolute;
+    left: 10rem;
+    top: 10rem;
+    font-size: 30rem;
+}
+.legal_file{
+    border: 2rem solid black;
+    color: black;
+}
+.legal_file:hover{
+    
+    box-shadow:0 0 20rem deepskyblue;
+}
+.option{
+    cursor: pointer; /* 鼠标悬停时变成抓手形状 */
+    position: absolute;
+    font-size: 40rem;
+    text-align: center;
+    left: 20rem;
+    top: 20rem;
+    transition: text-shadow 500ms;
+}
+.option:hover{
+    text-shadow:0 0 20rem deepskyblue;
+}
+.save_time{
+    position: absolute;
+    width: 300rem;
+    top: 40rem;
+    height: 40rem;
+    font-size: 20rem;
+    right: 0;
+}
+.save_bg_box{
+    position: absolute;
+    left: 2%;
+    width: 18vh;
+    top: 25%;
+    height: 12vh;
+    text-align: center;
+    overflow: hidden;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.save_text{
+    position: absolute;
+    left: 25%;
+    font-size: 25rem;
+    width: 70%;
+    top:60rem;
+    height: 50%;
+   
+    overflow: hidden;
+}
