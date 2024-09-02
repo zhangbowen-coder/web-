@@ -1,36 +1,46 @@
+body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
 .content-box{
-            background-image:url("../../resources/游戏背景图/中国朝鲜指挥部.png");
-          }
-          .dia-box{
-            height:90vh;
-            width:37vw;
-            top:6vh;
-            left:calc((100% - 600px) / 2);
-            background-color:none;
-            background-image:url("../../resources/游戏背景图/报纸/三个月.jpg");
-            background-repeat:no-repeat;
-            background-size:contain;
-            background-position:center;
-            font-size:x-large;
-            opacity:100%;
-          }
-          
-          .btn{
-            position:absolute;
-            bottom:3vw;
-            width:20vw;
-            height:4vh;
-            left:calc((100% - 20vw) / 2);
-            background-image:url("../../resources/游戏背景图/选项.png");
-            background-repeat:no-repeat;
-            background-size:cover;
-            background-position:center;
-            color:white;
-            text-align:center;
-            vertical-align:middle;
-            text-indent:0;
-          }
-    
-          .btn:hover{
-            color:black;
-          }
+  width:100vw;
+  height:100vh;
+  background-image:url("../../resources/游戏背景图/中国朝鲜指挥部.png");
+  background-size:cover;
+  background-position:center;
+}
+.paper-box{
+  height:90vh;
+  width:37vw;
+  position:absolute;
+  top:6vh;
+  left:calc((100% - 37vw) / 2);
+  background-color:none;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  font-size:x-large;
+  opacity:100%;
+}
+
+.button{
+  position:absolute;
+  bottom:3vw;
+  width:20vw;
+  height:4vh;
+  left:calc((100% - 20vw) / 2);
+  background-image:url("../../resources/游戏背景图/选项.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  vertical-align:middle;
+  text-indent:0;
+}
+
+.btn:hover{
+  color:black;
+}

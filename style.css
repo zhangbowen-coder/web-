@@ -40,7 +40,7 @@ body {
 }
 
 a:link {
-    color: #0000EE;
+    color: hwb(0 90% 6%);
   }
   
   a:visited {

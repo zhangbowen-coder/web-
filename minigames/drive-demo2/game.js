@@ -2,7 +2,7 @@
  * @Author: 699574 3331908788@qq.com
  * @Date: 2024-08-28 16:22:32
  * @LastEditors: 699574 3331908788@qq.com
- * @LastEditTime: 2024-08-31 16:46:45
+ * @LastEditTime: 2024-09-02 16:42:56
  * @FilePath: \undefinedc:\Users\win11\Desktop\web\web-assignment\minigames\drive-demo2\game.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -21,6 +21,10 @@ let lastRenderTime=0;
 const gameboard=document.getElementById("game-board");
 let gameover=0;
 let Win=0;
+
+const changeWin = () =>{
+  Win=1;
+}
 
 const change = (Event) =>{
   if(Event.key==="1")
@@ -49,7 +53,7 @@ const main = (currentTime) => {
     alert("win");
     var game1index=1;
     localStorage.setItem('game1win',game1index);
-    window.location.href="../../body/html/test.html";
+    window.location.href="../../body/html/game.html";
     return;
   }
 
@@ -101,3 +105,4 @@ const main = (currentTime) => {
   bonus();
   punish();
  }
+
