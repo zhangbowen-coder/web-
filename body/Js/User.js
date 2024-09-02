@@ -182,7 +182,7 @@ window.onload = function () {
     if (array[index].achi1 + array[index].achi2 + array[index].achi3 + array[index].achi4 == 4) ach++;
     document.getElementById("achievement_").innerHTML = ach + "/8";
 }
-
+//存档
 function saveStory(archiveName) {
     const storyJSON = JSON.stringify(story);
     localStorage.setItem(`gameArchive_${archiveName}`, storyJSON);
@@ -199,7 +199,7 @@ function saveStory(archiveName) {
   function deleteArchive(archiveName) {
     localStorage.removeItem(`gameArchive_${archiveName}`);
   }
-
+//第二种存档构思
   function get_now_file(){
     var strUrl=window.location.href;
     var arrUrl=strUrl.split("/");
